@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unes - Contato</title>
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <t-header></t-header>
+    <main id="contact-main">
+      <section class="section-contato">
+        <div class="info-container">
+          <h2>Fale Conosco</h2>
+          <h3>Atendimento Unes</h3>
+          <h4>Presencialmente</h4>
+          <t-campus campus="SJC"></t-campus>
+          <t-campus campus="CJORD"></t-campus>
+          <div class="contact-container">
+            <t-contact-info
+              title="Whatsapp"
+              icon="bxl  bx-whatsapp"
+              info="(12) 55555-5555"
+            ></t-contact-info>
+            <t-contact-info
+              title="Telefone"
+              icon="bx bx-phone"
+              info="(12) 55555-5555"
+            ></t-contact-info>
+          </div>
+        </div>
+        <div class="form-container">
+          <h4>Entre em Contato</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            bibendum, sem a luctus finibu.
+          </p>
+          <form class="form">
+            <t-input-group title="email" placeholder="Preencha o seu email">
+            </t-input-group>
+            <t-input-group title="assunto" placeholder="Descreva o assunto">
+            </t-input-group>
+            <div class="input-group">
+              <label for="desc">Descrição:</label>
+              <textarea
+                name="desc"
+                id="desc"
+                placeholder="Escreva a mensagem"
+              ></textarea>
+            </div>
+            <t-button label="Enviar" className="button--form"></t-button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <t-footer></t-footer>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

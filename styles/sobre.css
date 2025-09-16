@@ -1,0 +1,138 @@
+#main-sobre {
+  width: 100%;
+}
+
+.section-sobre {
+  height: 60vh;
+  background-color: var(--light-gray-2);
+  margin-top: 10rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-sobre figure img {
+  height: 40rem;
+  border-radius: 5rem;
+}
+
+.sobre-container {
+  width: 60%;
+
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+
+.sobre {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sobre h3,
+.sobre h2,
+.section-motivos h2 {
+  font-family: var(--hammer-font);
+  font-weight: 300;
+}
+
+.sobre h3 {
+  font-size: 2rem;
+  color: var(--text-color-2);
+  margin-bottom: 1rem;
+}
+
+.sobre h2,
+.section-motivos h2 {
+  font-size: 3rem;
+  color: var(--dark-gray);
+  margin-bottom: 2rem;
+}
+
+.sobre p {
+  margin-bottom: 2rem;
+}
+
+.section-motivos {
+  height: 80vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section-motivos h2 {
+  margin-bottom: 10rem;
+}
+
+.motivos-container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.motivos__num {
+  font-size: 5rem;
+  font-family: var(--hammer-font);
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.motivos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.section-cursos {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* CSS TUTORIAL */
+
+.cursos__container {
+  width: 100%;
+  height: 30rem;
+  position: relative;
+}
+
+.cursos__card {
+  border-radius: 2rem;
+  background: #f2f2f2;
+  padding: 3rem;
+  position: relative;
+  height: 25rem;
+  overflow: hidden;
+
+  display: flex;
+}
+
+.cursos__card::before {
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: var(--primary);
+  left: 0;
+  top: 0;
+}
+
+.cursos__card .cursos__card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}

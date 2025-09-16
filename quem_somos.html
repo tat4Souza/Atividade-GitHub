@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unes - Quem somos</title>
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <t-header></t-header>
+    <main id="main-sobre">
+      <section class="section-sobre">
+        <div class="sobre-container">
+          <figure>
+            <img src="./images/library.jpg" alt="Biblioteca" />
+          </figure>
+          <div class="sobre">
+            <h3>Quem somos?</h3>
+            <h2>A Melhor Universidade do Vale</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              eleifend rhoncus turpis, et rhoncus neque ullamcorper eu.
+              Suspendisse commodo dolor vitae dapibus auctor. Sed a nisl at
+              ipsum hendrerit molestie feugiat id nisl.
+            </p>
+            <t-button label="Fale Conosco"></t-button>
+          </div>
+        </div>
+      </section>
+      <section class="section-motivos">
+        <h2>Motivos para Estudar</h2>
+        <div class="motivos-container">
+          <t-motivos number="1"></t-motivos>
+          <t-motivos number="2"></t-motivos>
+          <t-motivos number="3"></t-motivos>
+          <t-motivos number="4"></t-motivos>
+          <t-motivos number="5"></t-motivos>
+        </div>
+      </section>
+      <section class="section-cursos">
+        <h2>Cursos <i class="bx bx-menu-filter"></i></h2>
+        <div class="cursos__container swiper mySwiper">
+          <div class="cursos__content swiper-wrapper">
+            <div class="cursos__card swiper-slide">
+              <div class="cursos__card-content">
+                <h4>Análise de Sistemas</h4>
+                <p>Tecnólo: 3 anos</p>
+
+                <ul>
+                  <li>Presencial<i class="bx bx-caret-right"></i></li>
+                  <li>Online <i class="bx bx-caret-right"></i></li>
+                  <li>Semipresencial <i class="bx bx-caret-right"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
+    <t-footer></t-footer>
+    <script src="./scripts/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        grabCursor: true,
+        loop: true,
+        // Pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // Next and previous navigation
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        // Responsive breakpoints
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

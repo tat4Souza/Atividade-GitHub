@@ -1,0 +1,41 @@
+:root {
+  --primary: #b047ca;
+  --primary-50op: #b047ca72;
+  --primary-10op: #b047ca2c;
+  --dark-gray: #21212e;
+  --light-gray: #67627c83;
+  --light-gray-2: #f4f5f8;
+  --text-color: #52545a;
+  --text-color-2: #878995;
+  --white: #ffff;
+
+  --hammer-font: "Hammersmith One", sans-serif;
+  --open-sans-font: "Open Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+::selection {
+  background-color: var(--primary-10op);
+}
