@@ -1,0 +1,49 @@
+.swiper {
+  width: 65%;
+  height: 50rem;
+  padding-bottom: 6rem;
+}
+
+.swiper-slide {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  justify-content: flex-end;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #fff;
+  width: 3rem;
+  height: 3rem;
+  color: var(--primary);
+  border: 1px solid #f9fafb;
+  border-radius: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(92, 115, 160, 0.2);
+  padding: 0.8rem;
+}
+
+.swiper-button-prev::after {
+  font-family: "Font Awsome 5 Free";
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.swiper-button-next::after {
+  font-family: "Font Awsome 5 free";
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.swiper-button-prev {
+  left: 3px;
+}
+
+.swiper-button-next {
+  right: 3px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--primary);
+}
